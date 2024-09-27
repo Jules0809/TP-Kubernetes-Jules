@@ -20,7 +20,7 @@ spec:
             - containerPort: 80
           env:
             - name: WORDPRESS_DB_HOST
-              value: "mysql.database.svc.cluster.local"
+              value: "mysql-service.database.svc.cluster.local"
             - name: WORDPRESS_DB_USER
               valueFrom:
                 configMapKeyRef:
